@@ -11,7 +11,7 @@ terraform {
 
 provider "google" {
   project = "techchallenge-fastfood"
-  region  = "us-east1-b"
+  region  = "us-east1"
 }
 
 module "gke" {
@@ -24,7 +24,8 @@ module "gke" {
   remove_default_node_pool = true
   ip_range_pods      = ""
   ip_range_services  = ""
-  region             = "us-east1-b"
+  region             = "us-east1"
+  zones  = ["us-east1-b"]
 }
 
 resource "null_resource" "gke_update_kubeconfig" {
