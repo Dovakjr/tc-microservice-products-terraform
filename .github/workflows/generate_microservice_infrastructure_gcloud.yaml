@@ -50,7 +50,7 @@ jobs:
           PROJECT_ID: techchallenge-fastfood
           APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS_BASE64 }}
           CLUSTER_NAME: tc-microservice-product-cluster
-          ZONE_NAME: us-east1
+          ZONE_NAME: us-east1-b
         with:
           args: apply -f app.k8sConfig.yaml 
 
