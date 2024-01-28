@@ -38,7 +38,6 @@ jobs:
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
   build:
-    needs: terraform
     runs-on: ubuntu-latest
 
     steps:
@@ -49,7 +48,7 @@ jobs:
         env:
           PROJECT_ID: techchallenge-fastfood
           APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS_BASE64 }}
-          CLUSTER_NAME: tc-microservice-order-cluster
+          CLUSTER_NAME: tc-microservice-product-cluster
           ZONE_NAME: us-east1
         with:
           args: apply -f app.k8sConfig.yaml 
