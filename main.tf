@@ -15,7 +15,7 @@ provider "google" {
 }
 
 module "gke" {
-  name               = "tc-microservice-product-cluster"
+  name               = "tc-microservice-order-cluster"
   source             = "terraform-google-modules/kubernetes-engine/google"
   project_id         = "techchallenge-fastfood"
   network            = "default"
