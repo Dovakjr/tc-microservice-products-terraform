@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
         - name: app-container
-          image: dovakjr/fase1techchallenge:latest
+          image: dovakjr/tc-microservice-product:latest
           ports:
             - containerPort: 3000
           env:
