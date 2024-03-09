@@ -2,3 +2,4 @@
  K8s infrastructure with terraform and GCloud
 
 #GKE Credentials must be encoded to base64 using bash
+.
